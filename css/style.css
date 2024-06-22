@@ -1,0 +1,74 @@
+body, html {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #D9DDDC;
+}
+header {
+    width: 100%;
+    background-color: #1E3A8A; /* Warna biru */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.topic{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.header-item {
+    margin-right: 20px; /* Ubah nilai ini sesuai kebutuhan untuk jarak antar item */
+    color: white;
+    font-size: small;
+    text-align: left;
+}
+.search-bar {
+    background-color: #B9BBB6; /* Warna abu-abu */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+}
+.search-bar::placeholder {
+    color: white; /* Warna placeholder putih */
+}
+.search-button {
+    background-color: #FF4500; /* Warna oranye */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+.right-align {
+    margin-left: 580px;
+    display: flex;
+    align-items: center;
+}
+.oval-box {
+    background-color: #B9BBB6; /* Warna abu-abu */
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+.dropdown {
+    background-color: #1E3A8A;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.categories {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .category-item{
+    border: none;
+    background-color: #D9DDDC;
+  }

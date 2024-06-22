@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Web Artikel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-item">Home</div>
+      <input type="text" class="search-bar" placeholder="Search" />
+      <button class="search-button">Cari</button>
+      <div class="right-align">
+        <select class="header-item dropdown">
+          <option value="kategori">Kategori</option>
+          <option value="Pendidikan">Pendidikan</option>
+          <option value="Olahraga">Olahraga</option>
+          <option value="Kesehatan">Kesehatan</option>
+          <option value="Indonesia">Indonesia</option>
+        </select>
+        <a href="./lozin/tombol login.html"> 
+        <div class="header-item oval-box">Login</div>
+      </a>
+        <a href="./regis.html"></a>
+      <div class="header-item oval-box">Register</div>
+    </header>
+    <div class="topic">DIGITAL NEWS</div>
+    <div class="categories" style="margin-bottom: 40px">
+      <button class="category-item" onclick="showPendidikanArticles();">
+        PENDIDIKAN
+      </button>
+      <button class="category-item" onclick="showSportsArticles();">
+        OLAHRAGA
+      </button>
+      <button
+        class="category-item" onclick="showKesehatanArticles();">
+        KESEHATAN
+      </button>
+      <button
+        class="category-item" onclick="showIndonesiaArticles();">
+        INDONESIA
+      </button>
+    </div>
+
+    <div
+    class="row row-cols-1 row-cols-md-3 g-3"
+    style="margin-left: 10px; margin-bottom: 40px"
+    id="pendidikanArticles"
+  >
+    <!-- Artikel Pendidikan akan dimuat di sini -->
+  </div>
+  <script>
+    function showPendidikanArticles() {
+      const pendidikanArticles = `
+  <div class="col">
+      <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+        <img src="https://tebuireng.online/wp-content/uploads/2019/12/Guru-dan-Murid.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pentingnya pendidikan </h5>
+          <p class="card-text">Pendidikan merupakan hal yang terpenting dalam kehidupan kita,ini berarti bahwa setiap manusia berhak mendapat dan berharap untuk selalu berkembang dalam pendidikan. Pendidikan secara umum mempunyai arti suatu proses kehidupan dalam mengembangkan diri tiap individu untuk dapat hidup dan melangsungkan kehidupan. Sehingga menjadi seorang yang terdidik itu sangat penting. Pendidikan pertama kali yang kita dapatkan di lingkungan keluarga, lingkungan sekolah dan lingkungan masyarakat.
+Seorang anak yang disayangi akan menyayangi keluarganya ,sehingga anak akan merasakan bahwa anak dibutuhkan dalam keluarga. Sebab merasa keluarga sebagai sumber kekuatan yang membangunya.Dengan demikian akan timbul suatu situasi yang saling membantu,saling menghargai,yang sangat mendukung perkembangan anak.Di dalam keluarga yang memberi kesempatan maksimum pertumbuhan,dan perkembangan adalah orang tua.Dalam lingkungan keluarga harga diri berkembang karena dihargai,diterima,dicintai,dan dihormati sebagai manusia .Itulah pentingnya mengapa kita menjadi orang yang terdidik di lingkungan keluarga.Orang tua mengajarkan kepada kita mulai sejak kecil untuk menghargai orang lain.
+Sedangkan di lingkungan sekolah yang menjadi pendidikan yang kedua dan apabila orang tua mempunyai cukup uang maka dapat melanjutkannya ke jenjang yang lebih tinggi dan akan melanjutkan ke Perguruan Tinggi kemudian menjadi seorang yang terdidik . Alangkah pentingnya pendidikan itu. Guru sebagai media pendidik memberikan ilmunya sesuai dengan kemampuan yang dimiliki. Peranan guru sebagai pendidik merupakan peran  memberi bantuan dan dorongan ,serta tugas-tugas yang berkaitan dengan mendisiplinkan anak  agar anak dapat mempunyai rasa tanggung jawab dengan apa yang dia lakukan. Guru juga harus berupaya agar pelajaran yang diberikan selalu cukup untuk menarik minat anak .
+Selain itu peranan lingkungan masyarakat juga penting bagi anak  didik . Hal ini berarti memberikan gambaran tentang bagaimana kita hidup bermasyarakat.Dengan demikian bila kita berinteraksi dengan masyarakat maka mereka akan menilai kita,bahwa  tahu mana orang yang terdidik,dan  tidak terdidik. Di zaman Era Globalisasi diharapkan generasi muda bisa mengembangkan ilmu yang didapat sehingga tidak ketinggalan dalam perkembangan zaman. Itulah pentingnya menjadi seorang yang terdidik baik di lingkungan Keluarga,Sekolah,dan Masyarakat..</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="col">
+    <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+      <img src="https://blog-static.mamikos.com/wp-content/uploads/2022/07/Yel-Yel-Kelas-Lucu-Lagu-TikTok-Singkat.jpg" class="card-img-top" alt="...">
+      <div class="card-body"> 
+        <h5 class="card-title">Penerapan Teknologi di saat Covid</h5>
+        <p class="card-text">Teknologi Informasi dan Komunikasi (TIK) mencakup dua aspek yaitu teknologi informasi dan teknologi komunikasi. Teknologi informasi meliputi segala hal yang berkaitan dengan proses, penggunaan sebagai alat bantu, manipulasi, dan pengelolaan informasi. Sedangkan teknologi komunikasi adalah segala sesuatu yang berkaitan dengan penggunaan alat bantu untuk memproses dan mentransfer data dari perangkat yang satu ke lainnya (id.wikipedia.org-Juni 2021). Oleh karena itu teknologi informasi dan komunikasi sering tidak terpisahkan satu sama lain.
+            Sejak diumumkan oleh pemerintah pada bulan Maret 2020 lalu, Indonesia hingga saat ini masih berjibaku melawan pandemi Covid-19. Sehingga semua elemen perlu mendorong inisiatif pembatasan sosial bukan hanya berskala besar tetapi juga lokal. Salah satu cara mencegah penyebaran Covid-19 ini adalah dengan adanya pembatasan-pembatasan dimulai dari instansi pemerintah hingga masyarakat umum dalam melaksanakan kegiatan. Pembatasan yang ada tentunya memiliki dampak yang cukup besar baik dari sisi ekonomi, sosial, pendidikan, kesehatan, maupun kebijakan. Termasuk pelayanan kepada masyarakat yang dilakukan oleh instansi-instansi pemerintah menjadi terbatas dan tidak berjalan seperti sebelumnya.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col">
+      <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+        <img src="https://statik.tempo.co/data/2014/10/03/id_330689/330689_620.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 the card-title"> Problematika soal Pendidikan Indonesia </h5>
+          <p class="card-text">Berbicara mengenai problematika pendidikan Indonesia bukanlah hal yang mudah untuk segera diterapkan. Negara ini harusnya sudah cukup matang dalam mengelola sistem pendidikan dengan umur yang sudah 70 tahun. Tetapi sampai sekarang, masih banyak aspek yang harus dibenahi terutama prioritas dari pemerintah dan pembangunan infrastruktur. Jika dilihat dari segi kelayakan bangunan sekolah saja, masih banyak gedung untuk kegiatan belajar yang jauh dari kata pantas. Bahkan guru dan siswa selalu cemas dengan kondisi gedung sekolah yang tidak aman untuk ditempati karena hampir roboh. Berbagai permasalahan dalam dunia pendidikan di republik ini tampak semakin melebar dan komplek. Pada tanggal 17 April 2015, pemerintah melalui Menteri Pendidikan menyatakan kualitas pendidikan Indonesia sedang dalam fase gawat darurat. Sesuatu yang sangat mengejutkan di zaman yang semakin maju dan serba persaingan. Menerima atau tidak, Indonesia merupakan negara yang mutu pendidikannya masih rendah jika dibandingkan dengan negara-negara lain bahkan sesama anggota di lingkup ASEAN. Bahkan bisa dikatakan kualitas sumber daya manusia bangsa Indonesia masuk dalam peringkat yang paling rendah secara rata-rata. Hal ini terjadi karena sistem pendidikan Indonesia belum dapat berfungsi secara maksimal. Pemerintah perlu segera memperbaiki kualitas pendidikan Indonesia agar mampu melahirkan generasi yang memiliki keunggulan dan berdaya saing. Harapan tentunya masih terbuka lebar untuk selalu berbenah dan mempersiapkan putra-putri bangsa dalam menghadapi persaingan global yang terus berlangsung.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+</div>
+`;
+      document.getElementById("pendidikanArticles").innerHTML =
+        pendidikanArticles;
+    }
+  </script>
+
+
+    <div
+      class="row row-cols-1 row-cols-md-3 g-3"
+      style="margin-left: 10px; margin-bottom: 40px"
+      id="sportsArticles"
+    >
+      <!-- Artikel Olahraga akan dimuat di sini -->
+    </div>
+    <script>
+      function showSportsArticles() {
+        const sportsArticles = `
+        <div class="col">
+          <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+            <img src="https://th.bing.com/th/id/OIF.UponggFmeIuUYbMg3UGJ3g?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Timnas Sepak Bola Indonesia Menang Melawan Filipina</h5>
+              <p class="card-text">Tim nasional sepak bola Indonesia meraih kemenangan atas Filipina dengan skor 2-1 dalam pertandingan kualifikasi Piala Dunia 2026. Kemenangan ini memberikan harapan baru bagi Indonesia untuk melaju ke babak berikutnya .</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">18 Juni 2024</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+            <img src="https://th.bing.com/th/id/OIP.Vu9tc4-g9mIE9MObr9H9FAHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Indonesia Akan Menjadi Tuan Rumah World Water Forum 2024</h5>
+              <p class="card-text">Indonesia terpilih menjadi tuan rumah World Water Forum 2024 yang akan diadakan di Bali. Forum ini akan membahas berbagai isu terkait pengelolaan air dan diharapkan menarik partisipasi dari banyak negara .</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">13 April 2024</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+            <img src="https://vayofm.com/content_img/128612/238.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cristiano Ronaldo Siap Beraksi di Euro 2024</h5>
+              <p class="card-text">Cristiano Ronaldo mengaku masih merasakan gugup meski sering tampil di berbagai ajang bergengsi. Kapten Timnas Portugal ini siap memberikan performa terbaiknya dalam Euro 2024 yang sedang berlangsung. Ronaldo berharap dapat membawa Portugal melaju jauh dalam turnamen ini .</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">04 Juni 2024</small>
+            </div>
+          </div>
+        </div>
+      `;
+        document.getElementById("sportsArticles").innerHTML = sportsArticles;
+      }
+    </script>
+
+
+    <div
+      class="row row-cols-1 row-cols-md-3 g-3"
+      style="margin-left: 10px; margin-bottom: 40px"
+      id="kesehatanArticles"
+    >
+      <!-- Artikel Kesehatan akan dimuat di sini -->
+    </div>
+    <script>
+      function showKesehatanArticles() {
+        const kesehatanArticles = `
+    <div class="col">
+        <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+          <img src="https://th.bing.com/th/id/OIP.L-od57vy67pRUlEHPw856QHaEp?w=720&h=452&rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> statistik pekerjaan di indonesia  </h5>
+            <p class="card-text">Berdasarkan data dari Badan Pusat Statistik bulan Mei 2022, terdapat lebih dari 135 juta orang atau sekitar 49.2% dari seluruh jumlah penduduk Indonesia yang bekerja, baik sebagai pekerja formal maupun informal. Mereka bekerja pada berbagai lapangan pekerjaan baik di dalam maupun di luar gedung, yang tersebar pada bidang yang berkaitan dengan kegiatan administratif, jasa, pendidikan, industri pengolahan, pertanian/kehutanan/perikanan, pertambangan, konstruksi, perdagangan, seni dan hiburan, aktivitas rumah tangga, dan banyak lagi. Bagi pekerja, setidaknya 8 jam atau sepertiga waktu dalam sehari digunakan untuk bekerja. Waktu tersebut belum termasuk bekerja lembur atau bekerja yang menggunakan waktu libur atau waktu di luar jam kerja. Selama masa pandemi yang menyebabkan berkembangnya sebuah proses kerja yang bisa dilakukan dari rumah atau dari mana pun, waktu kerja menjadi semakin tidak terbatas.
+              Selama proses kerja, para pekerja berpotensi terpajan bahaya potensial di tempat kerja yang dapat menyebabkan masalah kesehatan yang dikenal sebagai penyakit akibat kerja (PAK) atau dapat memperberat masalah kesehatan yang sudah dimiliki pekerja. Terdapat 5 kelompok bahaya potensial di tempat kerja, yaitu bahaya potensial fisik, kimia, biologi, ergonomi, dan psikososial. Bahaya potensial fisik, misalnya bising, getaran, radiasi elektromagnetik, suhu ekstrim, dan lain sebagainya. Bahaya potensial kimia, misalnya pelarut organik yang mudah menguap, logam berat, pestisida, dan banyak lagi. Bahaya potensial biologi, misalnya bakteri, virus, jamur, serangga, serbuk kayu, dan lain-lain. Bahaya potensial ergonomi, misalnya posisi statis, gerak berulang, kegiatan angkat-angkut, posisi janggal, pencahayaan berlebih/kurang, kerja shift, dan lain sebagainya. Bahaya potensial psikososial, misalnya kerja monoton, konflik di tempat kerja, beban kerja tinggi, dan lain-lain. Pada suatu tempat kerja, dapat memiliki salah satu, beberapa, atau bahkan seluruh bahaya potensial. Semakin lama pekerja terpajan bahaya potensial di tempat kerja, semakin besar kemungkinan terjadi PAK.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col">
+      <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+        <img src="https://yuz.uz/file/news/2e27dee810bd75a609279b4ecf822953.webp" class="card-img-top" alt="...">
+        <div class="card-body"> 
+          <h5 class="card-title">Penelitian di bidang kesehatan</h5>
+          <p class="card-text">Di bidang kesehatan masyarakat lainnya, pada 1807, Gubernur Jenderal Daendels mengadakan pelatihan praktik persalinan bagi dukun bayi guna menurunkan tingginya angka kematian bayi. Pada pertengahan abad ke-19, di Indonesia mulai berdiri sekolah-sekolah kedokteran, yang dalam perkembangannya mempunyai andil besar dalam menghasilkan tenaga medis yang mengembangkan kesehatan masyarakat. Selain sekolah kedokteran, di beberapa kota seperti di Bandung, Medan, Semarang, Makassar, Surabaya, dan Yogyakarta, berdiri laboratorium. Laboratorium-laboratorium tersebut memiliki peranan penting dalam menunjang pemberantasan penyakit, seperti malaria, lepra, cacar, dan bahkan untuk bidang kesehatan masyarakat yang lain seperti gizi dan sanitasi.
+            Pada 1922, pes masuk Indonesia dan terus menyebar selama beberapa tahun setelahnya hingga menimbulkan banyak korban jiwa. Berdasarkan penelitian dr John Lee Hydrich, tingginya angka kematian disebabkan oleh buruknya kondisi sanitasi lingkungan karena kebiasaan penduduk yang kurang sehat. John Lee Hydrich adalah seorang penasihat ahli dalam bidang kesehatan masyarakat dari Lembaga Rockeffeller New York. Berangkat dari temuannya, Hydrich kemudian memulai upaya kesehatan masyarakat dengan mengembangkan daerah percontohan sebagai pendidikan penyuluhan kesehatan. Usaha Hydrich dianggap sebagai awal kesehatan masyarakat di Indonesia dan ia pun disebut-sebut sebagai pelopor kesehatan masyarakat di Indonesia.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+        <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+          <img src="https://img.okezone.com/content/2024/01/20/1/2957670/liliana-tanoesoedibjo-ingatkan-ibu-ibu-pentingnya-pendidikan-meski-kita-tua-tetap-harus-belajar-oLyIjnlS4h.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 the card-title"> Pemeriksaan </h5>
+            <p class="card-text">penting bagi kita untuk mengetahui status kesehatan dan kemungkinan risiko penyakit yang dapat dialami.  Oleh karena itu, pemeriksaan kesehatan sebagai cara pencegahan penyakit untuk segala usia terutama usia dewasa hingga lanjut usia.  
+Mengingat seiring bertambahnya usia, peluang untuk terkena penyakit atau masalah kesehatan kerap terjadi. Beragam penyakit kronis seperti diabetes, penyakit jantung, penyakit paru obstruktif kronik (PPOK), kanker, radang sendi dan berbagai kondisi lainnya dapat terdeteksi lebih awal.
+Terkadang ada beberapa penyakit yang tidak menunjukkan gejala sampai berkembang menjadi lebih parah.
+Dengan menjalani pemeriksaan kesehatan secara rutin, dokter dapat dengan mudah mendeteksi gejala atau risiko penyakit yang dapat muncul di masa depan. Terlebih jika terdapat riwayat keluarga yang meningkatkan risiko untuk mewarisi masalah kesehatan, seperti diabetes, kanker, dan kondisi lainnya. Adanya pemeriksaan rutin, memberikan kesempatan pada diri sendiri untuk mengambil langkah-langkah pencegahan yang tepat guna menjaga kesehatan Anda dan mengurangi risiko kesehatan potensial dikemudian hari.
+Dokter akan bertanya tentang pola makan, tidur, dan kebiasaan Anda yang lain. Bila dirasa perlu, dokter akan memberikan saran untuk menjalani gaya hidup sehat, seperti mengadopsi pola makan untuk menurunkan berat badan dan melakukan aktivitas fisik tertentu guna mencegah atau mengendalikan penyakit.
+Pemeriksaan rutin membuat dokter dapat mendeteksi gejala penyakit lebih awal dan merujuk Anda ke dokter spesialis yang sesuai. Terkadang, kondisi seperti tekanan darah tinggi dan diabetes tidak menunjukkan gejala yang jelas. Namun, melalui pemeriksaan berat badan, tekanan darah, dan kadar kolesterol, dokter dapat mengidentifikasi tanda-tanda awal penyakit tersebut.
+Dengan demikian, pemeriksaan kesehatan rutin memberikan kesempatan bagi dokter untuk melakukan deteksi dini dan mengambil langkah-langkah yang diperlukan untuk mengelola atau mencegah penyakit sebelum berkembang menjadi masalah yang lebih serius.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+  </div>
+  `;
+        document.getElementById("kesehatanArticles").innerHTML =
+          kesehatanArticles;
+      }
+    </script>
+
+    
+    <div
+      class="row row-cols-1 row-cols-md-3 g-3"
+      style="margin-left: 10px; margin-bottom: 40px"
+      id="indonesiaArticles"
+    >
+      <!-- Artikel Indonesia akan dimuat di sini -->
+    </div>
+    <script>
+      function showIndonesiaArticles() {
+        const indonesiaArticles = `
+    <div class="col">
+        <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+          <img src="https://th.bing.com/th/id/OIP.-7SUU7yYYHmjs1qJqlw_XQHaE7?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Presiden Jokowi Resmikan Proyek Infrastruktur Baru di IKN</h5>
+            <p class="card-text">Presiden Joko Widodo meresmikan beberapa proyek infrastruktur di Ibu Kota Nusantara (IKN), termasuk jalan tol dan fasilitas umum lainnya. Peresmian ini diharapkan dapat mempercepat perkembangan IKN sebagai pusat pemerintahan baru Indonesia.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">15 Juni 2024</small>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col">
+      <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+        <img src="https://th.bing.com/th/id/OIP.eaZz2k1UnXUeL0A4HRxL8AHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+        <div class="card-body"> 
+          <h5 class="card-title">Harga Beras Melonjak di Pasar Tradisional</h5>
+          <p class="card-text">Harga beras di beberapa pasar tradisional mengalami kenaikan signifikan akibat kurangnya pasokan dan peningkatan permintaan. Pemerintah sedang mengambil langkah-langkah untuk mengatasi masalah ini dan memastikan stabilitas harga pangan.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">15 Juni 2024</small>
+        </div>
+      </div>
+    </div>
+   
+    <div class="col">
+        <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
+          <img src="https://cdn.ajnn.net/files/images/20210916-img-20210916-213553.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 the card-title">KPK Tangkap Pejabat Tinggi Terkait Kasus Korupsi</h5>
+            <p class="card-text">Komisi Pemberantasan Korupsi (KPK) menangkap seorang pejabat tinggi pemerintah terkait kasus korupsi yang melibatkan proyek pembangunan di daerah. Penangkapan ini merupakan bagian dari upaya KPK untuk memberantas korupsi di Indonesia.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">20 Mei 2024</small>
+          </div>
+        </div>
+      </div>
+  </div>
+  `;
+        document.getElementById("indonesiaArticles").innerHTML =
+          indonesiaArticles;
+      }
+    </script>
+  </body>
+</html>
